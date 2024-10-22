@@ -33,7 +33,7 @@ if (task === 'backup') {
     });
   } catch (error) {
     post({
-      msg: '备份进程出错了',
+      msg: `备份进程出错了 ${error.message}`,
       result: false,
     });
   } finally {
